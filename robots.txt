@@ -1,0 +1,16 @@
+User-Agent: *
+Disallow: /page70260259.html
+Disallow: /page100635776.html
+Disallow: /page71295269.html
+Disallow: /tilda/form*
+Disallow: /tilda/rec*
+Disallow: /tilda/click*
+Disallow: /tilda/scroll*
+Disallow: /tilda/popup*
+Disallow: /tilda/cart*
+Disallow: /tilda/product*
+Disallow: /tilda/event*
+Disallow:
+
+
+Sitemap: https://batl-stand.ru/sitemap.xml

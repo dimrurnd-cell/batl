@@ -1,0 +1,48 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page71339955.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://batl-stand\.ru/$1 [R=301,L]
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =https
+RewriteCond %{HTTP_HOST} ^www\.batl-stand.ru [NC]
+RewriteRule ^(.*)$ https://batl-stand\.ru/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^portfolio$ page74530895.html [NC]
+RewriteRule ^portfolio/$ page74530895.html [NC]
+
+RewriteRule ^accreditation$ page104998306.html [NC]
+RewriteRule ^accreditation/$ page104998306.html [NC]
+
+RewriteRule ^customers$ page74519693.html [NC]
+RewriteRule ^customers/$ page74519693.html [NC]
+
+RewriteRule ^peredacha-dannyh$ page148946246.html [NC]
+RewriteRule ^peredacha-dannyh/$ page148946246.html [NC]
+
+RewriteRule ^polzovatelskoye-soglasheniye$ page148962086.html [NC]
+RewriteRule ^polzovatelskoye-soglasheniye/$ page148962086.html [NC]
+
+RewriteRule ^soglasiye-persdan$ page148964976.html [NC]
+RewriteRule ^soglasiye-persdan/$ page148964976.html [NC]
+
+RewriteRule ^policy$ page148966546.html [NC]
+RewriteRule ^policy/$ page148966546.html [NC]
+
+RewriteRule ^soglasiye-metrprog$ page148967346.html [NC]
+RewriteRule ^soglasiye-metrprog/$ page148967346.html [NC]
+
+RewriteRule ^pravila-rektekhno$ page148969126.html [NC]
+RewriteRule ^pravila-rektekhno/$ page148969126.html [NC]
+
+RewriteRule ^soglasiye-rekinfo$ page148971186.html [NC]
+RewriteRule ^soglasiye-rekinfo/$ page148971186.html [NC]
+
+
